@@ -1,0 +1,23 @@
+version: "2.1"
+services:
+  web:
+    image: henred/enzyme-hackathon:master
+    ports:
+      - "80:80"
+    environment:
+      - HOST=$HOST
+    networks:
+      - ddw
+  redis:
+    image: redis
+    entrypoint:
+      redis-server --appendonly yes
+    volumes:
+      - ddw:/data
+    networks:
+      - ddw
+volumes:
+  ddw:
+    external: false
+networks:
+  ddw:
