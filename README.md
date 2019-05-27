@@ -20,6 +20,12 @@ And then do
 pipenv install
 ```
 
+The install the nglview jupyter extension by
+
+```
+setup.sh
+```
+
 After that you should be able to open the notebook
 
 ```
