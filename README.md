@@ -50,7 +50,7 @@ sequences = [('AQSVPWGISRVQAPAAHNRGLTGSGVKVAVLDTGISTHPDLNIRRGGASFVPGEPSTQDGNGHGT
              'QSTYPGSTYASLNGTSMATPHVAGAAALVKQKNPSWSNVQIRNHLKNTATSLGGSSTTNNLYGSGLVN'
              'AEAATR')]
 
-payload = {'team': 'footeam', 'challenge': 0, 'sequences': sequences}
+    payload = {'team': 'footeam', 'challenge': 0, 'sequences': sequences}
 
-r = requests.post('http://localhost/score', json=payload)
+r = requests.post('http://find-the.best/enzyme', json=payload)
 ```
